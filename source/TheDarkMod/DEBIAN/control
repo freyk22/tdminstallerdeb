@@ -1,0 +1,27 @@
+Package: darkmod
+Version: 2.04
+Homepage: www.thedarkmod.com
+Copyright: GPL
+License: GPL
+Installed-Size: 2700000
+Section: Games
+Priority: optional
+Essential: no
+Architecture: all
+Depends: 
+Maintainer: Broken Glass Studios <team@thedarkmod.com>
+Vendor: Broken Glass Studios <team@thedarkmod.com>
+Packager: Freyk <team@thedarkmod.com>
+Description:
+ The Dark mod - A stealth first person game.
+ WARNING - This package installs only the updater and game folder.
+ .
+ IMPORTANT - Please run the darmod-updater after installing this package.
+ .
+ The Dark Mod is a fan-made game in the style of the original Thief.
+ This is a virtual package that provides run-time depedencies. 
+ After installation, please run the updater to install the game files.
+ .
+ For more information go to www.thedarkmod.com.
+ .
+ DEB-package created by Freek 'Freyk' Borgerink

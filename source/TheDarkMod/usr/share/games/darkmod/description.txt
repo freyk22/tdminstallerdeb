@@ -1,0 +1,6 @@
+The Dark Mod: Thief style universe for D3
+http://www.thedarkmod.com
+
+Installer created by freyk
+
+The package wil be installed to /Library/Application Support/darkmod

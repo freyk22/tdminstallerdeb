@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=The Dark Mod
+GenericName=The Dark Mod
+Comment=The Dark Mod, a game
+Path=/usr/share/games/darkmod/
+Exec=sh -c /usr/share/games/darkmod/tdm_update.linux --noselfupdate;$SHELL
+Icon=/usr/share/games/darkmod/TDM_icon.ico
+Categories=Game;ArcadeGame;
+Type=Application
+Terminal=false
+X-Desktop-File-Install-Version=0.3

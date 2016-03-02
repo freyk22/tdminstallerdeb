@@ -1,0 +1,12 @@
+#!/bin/sh
+#Post removal script for the dark mod installer deb 
+#Created by Freek -freyk- Borgerink
+#for more information go to www.thedarkmod.com
+
+#After removal by the packagemanager, remove the folder completely.
+rm -rf /usr/share/games/darkmod
+rm -f /usr/share/applications/TheDarkMod.desktop
+rm -f /usr/share/applications/TheDarkMod-Updater.desktop
+
+
+

@@ -1,0 +1,32 @@
+#!/bin/sh
+#Post installation script for the dark mod installer deb 
+#Created by Freek -freyk- Borgerink
+#for more information go to www.thedarkmod.com
+#
+# Thanks to:
+# professorkaos64 (for update tdm-updater script)
+
+#Set game dir variable
+GAME_DIR="/usr/share/games/darkmod"
+
+
+#Set userpermissions. all users can write in the folder and execute the tdm binaries
+chown -R nobody:users ${GAME_DIR}
+chown -R nobody:users ${GAME_DIR}/gfx
+chmod uga+w ${GAME_DIR}
+chmod uga+x ${GAME_DIR}/tdm_update.linux
+
+#desktop file for binary
+cp ${GAME_DIR}/*.desktop /usr/share/applications/
+
+##update the updater
+#UPDATER_URL="http://www.fidcal.com/darkuser/"
+#UPDATER_ZIP="tdm_update_linux.zip"
+#UPDATER_FILE="tdm_update.linux"
+#rm -f "${GAME_DIR}/${UPDATER_ZIP}"
+#rm -f "${GAME_DIR}/${UPDATER_FILE}"
+#echo -e "\nDownloading The Dark Mod updater...\n"
+#sleep 2s
+#wget -O "${GAME_DIR}/${UPDATER_ZIP}" "${UPDATER_URL}/${UPDATER_ZIP}" -q --show-progress -nc
+#unzip -d "${GAME_DIR}" "${GAME_DIR}/${UPDATER_ZIP}"
+#chmod uga+x "${GAME_DIR}/${UPDATER_FILE}"
